@@ -55,3 +55,4 @@
 2014-03-27 12:51:06 INFO  ServerThread:90 - After Process : Lat = 45.007023333333336 Long= -75.01153166666667
 2014-03-27 12:51:06 INFO  ServerThread:101 - inserted GPS data GpsDao [Lattitude=45.007023333333336, Longitude=-75.01153166666667, arrived_time=12:45:30, date=27-03-2014]
 2014-03-27 12:51:06 INFO  ServerThread:138 - Connection Closing..
+2014-03-27 18:49:14 INFO  Main:24 - created server --> server listening.....
