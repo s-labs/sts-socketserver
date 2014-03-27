@@ -1,0 +1,22 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<!-- Factory bean that creates the Mongo instance -->
+	<bean id="mongo" class="org.springframework.data.mongodb.core.MongoFactoryBean">
+		<property name="host" value="localhost" />
+	</bean>
+
+	<!-- MongoTemplate for connecting and quering the documents in the database -->
+	<bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate" scope="singleton">
+		<constructor-arg name="mongo" ref="mongo" />
+		<constructor-arg name="databaseName" value="sts" />
+	</bean>
+	
+	<bean id="dataSender" class="com.main.app.DataSender" />
+	<bean id="processData" class="com.main.app.ProcessData"/>
+	<bean id="gprsData" class="com.data.grps.GprsData"/>
+	<bean id="gpsServiceImpl" class="com.data.grps.GpsServiceImpl"/>
+	<bean id="gpsDao" class="com.data.grps.GpsDao"/>
+</beans>
