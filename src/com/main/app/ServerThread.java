@@ -14,7 +14,7 @@ import org.springframework.context.ApplicationContext;
 import com.data.grps.GprsData;
 import com.data.grps.GpsDao;
 import com.data.grps.GpsServiceImpl;
-
+//Server Thread Program
 class ServerThread extends Thread {
 	private static final Logger logger = Logger.getLogger(ServerThread.class);
 
