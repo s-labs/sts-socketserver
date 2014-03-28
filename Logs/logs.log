@@ -1,2 +1,14 @@
 2014-03-28 09:36:38 INFO  Main:24 - created server --> server listening.....
 2014-03-28 11:52:34 INFO  Main:27 - Cannot create server with port [ 10000 ] , PORT already in use!
+2014-03-28 12:05:23 INFO  Main:27 - Cannot create server with port [ 10000 ] , PORT already in use!
+2014-03-28 12:07:36 INFO  Main:24 - created server --> server listening.....
+2014-03-28 12:07:41 INFO  Main:33 - connection Established with --> /127.0.0.1:55213
+2014-03-28 12:07:41 INFO  ServerThread:69 - GPRS data recieved [ G,0004658950 ] is not valid
+2014-03-28 12:07:41 INFO  ServerThread:138 - Connection Closing..
+2014-03-28 12:08:01 INFO  Main:33 - connection Established with --> /127.0.0.1:55222
+2014-03-28 12:08:01 INFO  ServerThread:63 - RFID data recieved [ R,0004658950 ]
+2014-03-28 12:08:01 INFO  ServerThread:138 - Connection Closing..
+2014-03-28 12:08:27 INFO  Main:33 - connection Established with --> /127.0.0.1:55234
+2014-03-28 12:08:27 INFO  ServerThread:54 - invalid data recieved [ 0004658950 ]
+2014-03-28 12:08:27 INFO  ServerThread:138 - Connection Closing..
+2014-03-28 12:09:11 INFO  Main:24 - created server --> server listening.....

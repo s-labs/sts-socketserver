@@ -57,7 +57,7 @@ class ServerThread extends Thread {
 				//logger.info("[ "+dataSender.getData()+" ]");
 				String dataType=processData.findDataType(dataSender.getData());
 				if(dataType==null){
-					logger.info("invalid data recieved [ "+dataSender.getData()+" ]");
+					logger.info("invalid data recieved [ "+dataSender.getData()+" ] ==> ignoring.....");
 				}
 				else if(dataType.equals("RFID")){
 					logger.info("RFID data recieved [ "+dataSender.getData()+" ]");
