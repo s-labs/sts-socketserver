@@ -13,9 +13,7 @@ public class GpsServiceImpl implements GpsService {
 	
 	private MongoTemplate mongoTemplate;
 	
-	public MongoTemplate getMongoTemplate() {
-		return mongoTemplate;
-	}
+	
 
 	@Autowired
 	public void setMongoTemplate(MongoTemplate mongoTemplate) {
