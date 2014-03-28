@@ -14,7 +14,7 @@ public class Main {
 	@SuppressWarnings("resource")
 	public static void main(String args[]) {
 
-		ApplicationContext context;
+		ApplicationContext context;//Spring Application Context
 		context = new ClassPathXmlApplicationContext("spring-beans.xml");
 		
 		Socket s = null;
