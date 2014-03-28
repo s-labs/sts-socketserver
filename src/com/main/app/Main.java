@@ -14,7 +14,7 @@ public class Main {
 	@SuppressWarnings("resource")
 	public static void main(String args[]) {
 		
-		logger.warn("Creating beans....");
+		
 		ApplicationContext context;//Spring Application Context
 		context = new ClassPathXmlApplicationContext("spring-beans.xml");
 		
