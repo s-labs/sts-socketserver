@@ -13,8 +13,6 @@ public class GpsServiceImpl implements GpsService {
 	
 	private MongoTemplate mongoTemplate;
 	
-	
-
 	@Autowired
 	public void setMongoTemplate(MongoTemplate mongoTemplate) {
 		this.mongoTemplate = mongoTemplate;

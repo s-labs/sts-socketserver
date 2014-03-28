@@ -17,7 +17,7 @@ public class RfidServiceImpl implements RfidService {
 	}
 
 	@Override
-	public RfidDao getRfidByNumber() {
+	public RfidDao getRfidByNumber(String number) {
 
 		if (!mongoTemplate.collectionExists(RfidDao.class)) {
 			mongoTemplate.createCollection(RfidDao.class);
@@ -27,7 +27,7 @@ public class RfidServiceImpl implements RfidService {
 	}
 
 	@Override
-	public RfidDao getRfidById() {
+	public RfidDao getRfidById(String id) {
 		// TODO Auto-generated method stub
 		return null;
 	}

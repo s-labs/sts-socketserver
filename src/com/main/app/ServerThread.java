@@ -13,7 +13,9 @@ import org.springframework.context.ApplicationContext;
 
 import com.data.grps.GprsData;
 import com.sts.dao.GpsDao;
+import com.sts.dao.RfidDao;
 import com.sts.serviceimpl.GpsServiceImpl;
+import com.sts.serviceimpl.RfidServiceImpl;
 //Server Thread Program
 class ServerThread extends Thread {
 	private static final Logger logger = Logger.getLogger(ServerThread.class);
@@ -60,7 +62,16 @@ class ServerThread extends Thread {
 					logger.info("invalid data recieved [ "+dataSender.getData()+" ] ==> ignoring.....");
 				}
 				else if(dataType.equals("RFID")){
-					logger.info("RFID data recieved [ "+dataSender.getData()+" ]");
+					RfidServiceImpl rfidServiceImpl=context.getBean("rfidServiceImpl",RfidServiceImpl.class);
+					String data=dataSender.getData().trim();
+					String arr[] = data.split(",");
+					RfidDao rfidDao=rfidServiceImpl.getRfidByNumber(arr[1]);
+					if(rfidDao==null){
+						logger.info("RFID data recieved [ "+dataSender.getData()+" ] doesnot exists in db");
+					}
+					else{
+						logger.info("RFID data recieved [ "+dataSender.getData()+" ] exists in db");
+					}
 				}
 				else if(dataType.equals("GPRS")){
 					GprsData gprsData=context.getBean("gprsData",GprsData.class);

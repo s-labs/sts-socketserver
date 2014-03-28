@@ -1,0 +1,4 @@
+2014-03-28 18:02:56 INFO  Main:25 - created server --> server listening.....
+2014-03-28 18:03:26 INFO  Main:34 - connection Established with --> /127.0.0.1:52186
+2014-03-28 18:03:26 INFO  ServerThread:70 - RFID data recieved [ R,0003460030 ] doesnot exists in db
+2014-03-28 18:03:26 INFO  ServerThread:149 - Connection Closing..

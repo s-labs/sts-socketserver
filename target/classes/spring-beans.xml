@@ -22,4 +22,5 @@
 	<bean id="gprsData" class="com.data.grps.GprsData"/>
 	<bean id="gpsServiceImpl" class="com.sts.serviceimpl.GpsServiceImpl"/>
 	<bean id="gpsDao" class="com.sts.dao.GpsDao"/>
+	<bean id="rfidServiceImpl" class="com.sts.serviceimpl.RfidServiceImpl"/>
 </beans>
