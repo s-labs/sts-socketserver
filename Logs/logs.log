@@ -12,3 +12,44 @@
 2014-03-28 12:08:27 INFO  ServerThread:54 - invalid data recieved [ 0004658950 ]
 2014-03-28 12:08:27 INFO  ServerThread:138 - Connection Closing..
 2014-03-28 12:09:11 INFO  Main:24 - created server --> server listening.....
+2014-03-28 15:40:39 INFO  Main:27 - Cannot create server with port [ 10000 ] , PORT already in use!
+2014-03-28 15:41:40 INFO  Main:24 - created server --> server listening.....
+2014-03-28 15:42:34 INFO  Main:33 - connection Established with --> /127.0.0.1:49543
+2014-03-28 15:42:34 INFO  ServerThread:54 - invalid data recieved [ 0004658950 ]
+2014-03-28 15:42:34 INFO  ServerThread:138 - Connection Closing..
+2014-03-28 15:42:54 INFO  Main:33 - connection Established with --> /127.0.0.1:49544
+2014-03-28 15:42:54 INFO  ServerThread:101 - inserted GPS data GpsDao [Lattitude=17.776793333333334, Longitude=78.79446333333334, arrived_time=12:45:40, date=28-03-2014]
+2014-03-28 15:42:54 INFO  ServerThread:138 - Connection Closing..
+2014-03-28 15:45:44 INFO  Main:24 - created server --> server listening.....
+2014-03-28 15:46:12 INFO  Main:33 - connection Established with --> /127.0.0.1:49567
+2014-03-28 15:46:12 INFO  ServerThread:101 - inserted GPS data GpsDao [Lattitude=17.776793333333334, Longitude=78.79446333333334, arrived_time=12:45:40, date=28-03-2014]
+2014-03-28 15:46:12 INFO  ServerThread:138 - Connection Closing..
+2014-03-28 15:58:05 INFO  Main:24 - created server --> server listening.....
+2014-03-28 15:58:13 INFO  Main:33 - connection Established with --> /127.0.0.1:49657
+2014-03-28 15:58:13 INFO  ServerThread:104 - Unableto insert GPS data GpsDao [Lattitude=17.776793333333334, Longitude=78.79446333333334, arrived_time=12:45:40, date=28-03-2014]
+2014-03-28 15:58:13 INFO  ServerThread:138 - Connection Closing..
+2014-03-28 15:58:59 INFO  Main:24 - created server --> server listening.....
+2014-03-28 15:59:04 INFO  Main:33 - connection Established with --> /127.0.0.1:49659
+2014-03-28 15:59:04 INFO  ServerThread:104 - Unableto insert GPS data GpsDao [Lattitude=17.776793333333334, Longitude=78.79446333333334, arrived_time=12:45:40, date=28-03-2014]
+2014-03-28 15:59:04 INFO  ServerThread:138 - Connection Closing..
+2014-03-28 15:59:36 INFO  Main:24 - created server --> server listening.....
+2014-03-28 15:59:38 INFO  Main:33 - connection Established with --> /127.0.0.1:49660
+2014-03-28 15:59:38 INFO  ServerThread:104 - Unableto insert GPS data GpsDao [Lattitude=17.776793333333334, Longitude=78.79446333333334, arrived_time=12:45:40, date=28-03-2014]
+2014-03-28 15:59:38 INFO  ServerThread:138 - Connection Closing..
+2014-03-28 16:00:14 INFO  Main:24 - created server --> server listening.....
+2014-03-28 16:00:17 INFO  Main:33 - connection Established with --> /127.0.0.1:49661
+2014-03-28 16:00:17 INFO  ServerThread:104 - Unableto insert GPS data GpsDao [Lattitude=17.776793333333334, Longitude=78.79446333333334, arrived_time=12:45:40, date=28-03-2014]
+2014-03-28 16:00:17 INFO  ServerThread:138 - Connection Closing..
+2014-03-28 16:01:54 INFO  Main:24 - created server --> server listening.....
+2014-03-28 16:01:57 INFO  Main:33 - connection Established with --> /127.0.0.1:49701
+2014-03-28 16:01:57 INFO  ServerThread:104 - Unableto insert GPS data GpsDao [Lattitude=17.776793333333334, Longitude=78.79446333333334, arrived_time=12:45:40, date=28-03-2014]
+2014-03-28 16:01:57 INFO  ServerThread:138 - Connection Closing..
+2014-03-28 16:02:32 INFO  Main:24 - created server --> server listening.....
+2014-03-28 16:02:35 INFO  Main:33 - connection Established with --> /127.0.0.1:49702
+2014-03-28 16:02:35 INFO  ServerThread:104 - Unableto insert GPS data [ java.lang.NullPointerException ]
+2014-03-28 16:02:35 INFO  ServerThread:138 - Connection Closing..
+2014-03-28 16:03:36 INFO  Main:24 - created server --> server listening.....
+2014-03-28 16:03:39 INFO  Main:33 - connection Established with --> /127.0.0.1:49704
+2014-03-28 16:03:40 INFO  ServerThread:101 - inserted GPS data GpsDao [Lattitude=17.776793333333334, Longitude=78.79446333333334, arrived_time=12:45:40, date=28-03-2014]
+2014-03-28 16:03:40 INFO  ServerThread:138 - Connection Closing..
+2014-03-28 16:04:23 INFO  Main:24 - created server --> server listening.....

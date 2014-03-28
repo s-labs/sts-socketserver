@@ -12,8 +12,8 @@ import org.apache.log4j.Logger;
 import org.springframework.context.ApplicationContext;
 
 import com.data.grps.GprsData;
-import com.data.grps.GpsDao;
-import com.data.grps.GpsServiceImpl;
+import com.sts.dao.GpsDao;
+import com.sts.serviceimpl.GpsServiceImpl;
 //Server Thread Program
 class ServerThread extends Thread {
 	private static final Logger logger = Logger.getLogger(ServerThread.class);
@@ -97,11 +97,11 @@ class ServerThread extends Thread {
 								gpsDao.setLongitude(Longitude);
 								gpsDao.setDate(current_date);
 								try{
-									gpsServiceImpl.insertGpsData(gpsDao, context);
+									gpsServiceImpl.insertGpsData(gpsDao);
 									logger.info("inserted GPS data "+gpsDao);
 								}
 								catch(Exception e){
-									logger.info("Unableto insert GPS data "+gpsDao);
+									logger.info("Unableto insert GPS data: due to [ "+e+" ]");
 								}
 								
 							}
