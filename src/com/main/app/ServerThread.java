@@ -67,10 +67,13 @@ class ServerThread extends Thread {
 					String arr[] = data.split(",");
 					RfidDao rfidDao=rfidServiceImpl.getRfidByNumber(arr[1]);
 					if(rfidDao==null){
-						logger.info("RFID data recieved [ "+dataSender.getData()+" ] doesnot exists in db");
+						//System.out.println(rfidDao);
+						logger.info("RFID data recieved [ "+dataSender.getData()+" ] doesnot exists in db or doesnot assigned to no one");
 					}
 					else{
-						logger.info("RFID data recieved [ "+dataSender.getData()+" ] exists in db");
+						
+							logger.info("RFID data recieved [ "+dataSender.getData()+" ] exists with type [ "+rfidDao.getType()+" ]");
+						
 					}
 				}
 				else if(dataType.equals("GPRS")){
