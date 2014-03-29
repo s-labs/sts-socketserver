@@ -73,7 +73,7 @@ class ServerThread extends Thread {
 					else{
 						
 							logger.info("RFID data recieved [ "+dataSender.getData()+" ] exists with type [ "+rfidDao.getType()+" ]");
-						
+							
 					}
 				}
 				else if(dataType.equals("GPRS")){
