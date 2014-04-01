@@ -21,6 +21,8 @@
 	<bean id="processData" class="com.main.app.ProcessData"/>
 	<bean id="gprsData" class="com.data.grps.GprsData"/>
 	<bean id="gpsServiceImpl" class="com.sts.serviceimpl.GpsServiceImpl"/>
-	<bean id="gpsDao" class="com.sts.dao.GpsDao"/>
+	<bean id="gpsDao" class="com.sts.dao.DailyGpsDao"/>
 	<bean id="rfidServiceImpl" class="com.sts.serviceimpl.RfidServiceImpl"/>
+	<bean id="dailyRfidData" class="com.sts.dao.DailyRfidData"/>
+	<bean id="dailyRfidDataImpl" class="com.sts.serviceimpl.DailyRfidDataImpl"/>
 </beans>

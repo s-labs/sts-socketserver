@@ -1,77 +1,47 @@
-2014-03-29 09:44:52 INFO  Main:28 - Cannot create server with port [ 10000 ] , PORT already in use!
-2014-03-29 09:45:52 INFO  Main:25 - created server --> server listening.....
-2014-03-29 14:07:30 INFO  Main:28 - created server --> server listening.....
-2014-03-29 14:11:58 INFO  Main:37 - connection Established with --> /127.0.0.1:49401
-2014-03-29 14:11:58 INFO  ServerThread:70 - RFID data recieved [ R,0003460030 ] doesnot exists in db
-2014-03-29 14:11:58 INFO  ServerThread:149 - Connection Closing..
-2014-03-29 14:58:24 INFO  Main:28 - created server --> server listening.....
-2014-03-29 14:58:28 INFO  Main:37 - connection Established with --> /127.0.0.1:49529
-2014-03-29 14:58:28 INFO  ServerThread:71 - RFID data recieved [ R,0003460030 ] doesnot exists in db
-2014-03-29 14:58:28 INFO  ServerThread:150 - Connection Closing..
-2014-03-29 15:08:30 INFO  Main:28 - created server --> server listening.....
-2014-03-29 15:08:34 INFO  Main:37 - connection Established with --> /127.0.0.1:49712
-2014-03-29 15:08:34 INFO  ServerThread:71 - RFID data recieved [ R,0003460030 ] doesnot exists in db
-2014-03-29 15:08:34 INFO  ServerThread:150 - Connection Closing..
-2014-03-29 15:11:44 INFO  Main:28 - created server --> server listening.....
-2014-03-29 15:11:47 INFO  Main:37 - connection Established with --> /127.0.0.1:49717
-2014-03-29 15:11:48 INFO  ServerThread:150 - Connection Closing..
-2014-03-29 15:15:13 INFO  Main:28 - created server --> server listening.....
-2014-03-29 15:15:16 INFO  Main:37 - connection Established with --> /127.0.0.1:49727
-2014-03-29 15:15:16 INFO  ServerThread:71 - RFID data recieved [ R,0003460030 ] doesnot exists in db
-2014-03-29 15:15:16 INFO  ServerThread:150 - Connection Closing..
-2014-03-29 15:16:15 INFO  Main:28 - created server --> server listening.....
-2014-03-29 15:16:19 INFO  Main:37 - connection Established with --> /127.0.0.1:49729
-2014-03-29 15:16:19 INFO  ServerThread:71 - RFID data recieved [ R,0003460030 ] doesnot exists in db
-2014-03-29 15:16:19 INFO  ServerThread:150 - Connection Closing..
-2014-03-29 15:16:47 INFO  Main:28 - created server --> server listening.....
-2014-03-29 15:16:49 INFO  Main:37 - connection Established with --> /127.0.0.1:49731
-2014-03-29 15:16:49 INFO  ServerThread:71 - RFID data recieved [ R,0003460030 ] doesnot exists in db
-2014-03-29 15:16:49 INFO  ServerThread:150 - Connection Closing..
-2014-03-29 15:17:07 INFO  Main:28 - created server --> server listening.....
-2014-03-29 15:17:09 INFO  Main:37 - connection Established with --> /127.0.0.1:49747
-2014-03-29 15:17:09 INFO  ServerThread:71 - RFID data recieved [ R,0003460030 ] doesnot exists in db
-2014-03-29 15:17:09 INFO  ServerThread:150 - Connection Closing..
-2014-03-29 15:17:32 INFO  Main:28 - created server --> server listening.....
-2014-03-29 15:17:34 INFO  Main:37 - connection Established with --> /127.0.0.1:49752
-2014-03-29 15:17:34 INFO  ServerThread:71 - RFID data recieved [ R,0003460030 ] doesnot exists in db
-2014-03-29 15:17:34 INFO  ServerThread:150 - Connection Closing..
-2014-03-29 15:18:13 INFO  Main:28 - created server --> server listening.....
-2014-03-29 15:18:15 INFO  Main:37 - connection Established with --> /127.0.0.1:49754
-2014-03-29 15:18:15 INFO  ServerThread:71 - RFID data recieved [ R,0003460030 ] doesnot exists in db
-2014-03-29 15:18:15 INFO  ServerThread:150 - Connection Closing..
-2014-03-29 15:19:28 INFO  Main:28 - created server --> server listening.....
-2014-03-29 15:19:30 INFO  Main:37 - connection Established with --> /127.0.0.1:49756
-2014-03-29 15:19:30 INFO  ServerThread:74 - RFID data recieved [ R,0003460030 ] exists in db
-2014-03-29 15:19:30 INFO  ServerThread:150 - Connection Closing..
-2014-03-29 15:21:18 INFO  Main:28 - created server --> server listening.....
-2014-03-29 15:21:20 INFO  Main:37 - connection Established with --> /127.0.0.1:49764
-2014-03-29 15:21:20 INFO  ServerThread:75 - RFID data recieved [ R,0003460030 ] exists in db but not assigned to any one
-2014-03-29 15:21:20 INFO  ServerThread:155 - Connection Closing..
-2014-03-29 15:23:05 INFO  Main:37 - connection Established with --> /127.0.0.1:49767
-2014-03-29 15:23:05 INFO  ServerThread:78 - RFID data recieved [ R,0003460030 ] exists with type [ notavailable ]
-2014-03-29 15:23:05 INFO  ServerThread:155 - Connection Closing..
-2014-03-29 15:23:36 INFO  Main:28 - created server --> server listening.....
-2014-03-29 15:23:40 INFO  Main:37 - connection Established with --> /127.0.0.1:49769
-2014-03-29 15:23:40 INFO  ServerThread:78 - RFID data recieved [ R,0003460030 ] exists with type [ student ]
-2014-03-29 15:23:40 INFO  ServerThread:155 - Connection Closing..
-2014-03-29 15:29:03 INFO  Main:28 - created server --> server listening.....
-2014-03-29 15:29:07 INFO  Main:37 - connection Established with --> /127.0.0.1:49807
-2014-03-29 15:29:07 INFO  ServerThread:75 - RFID data recieved [ R,0003460030 ] exists with type [ student ]
-2014-03-29 15:29:07 INFO  ServerThread:152 - Connection Closing..
-2014-03-29 15:30:06 INFO  Main:37 - connection Established with --> /127.0.0.1:49809
-2014-03-29 15:30:06 INFO  ServerThread:71 - RFID data recieved [ R,0004658950 ] doesnot exists in db
-2014-03-29 15:30:06 INFO  ServerThread:152 - Connection Closing..
-2014-03-29 15:31:02 INFO  Main:28 - created server --> server listening.....
-2014-03-29 15:31:04 INFO  Main:37 - connection Established with --> /127.0.0.1:49811
-2014-03-29 15:31:04 INFO  ServerThread:71 - RFID data recieved [ R,0004658950 ] doesnot exists in db or doesnot assigned to one
-2014-03-29 15:31:04 INFO  ServerThread:152 - Connection Closing..
-2014-03-29 17:07:27 INFO  Main:28 - created server --> server listening.....
-2014-03-29 17:07:51 INFO  Main:37 - connection Established with --> /127.0.0.1:51188
-2014-03-29 17:07:51 INFO  ServerThread:75 - RFID data recieved [ R,0003460030,G,1746.6076,N,7847.6678,E,T,12:45:40 ] exists with type [ student ]
-2014-03-29 17:07:51 INFO  ServerThread:79 - GPRS data recieved [ R,0003460030,G,1746.6076,N,7847.6678,E,T,12:45:40 ] with RFID is not valid
-2014-03-29 17:07:51 INFO  ServerThread:192 - Connection Closing..
-2014-03-29 17:08:59 INFO  Main:28 - created server --> server listening.....
-2014-03-29 17:09:12 INFO  Main:37 - connection Established with --> /127.0.0.1:51206
-2014-03-29 17:09:12 INFO  ServerThread:75 - RFID data recieved [ R,0003460030,G,1746.6076,N,7847.6678,E,T,12:45:40 ] exists with type [ student ]
-2014-03-29 17:09:12 INFO  ServerThread:79 - GPRS data recieved [ R,0003460030,G,1746.6076,N,7847.6678,E,T,12:45:40 ] with RFID is not valid
-2014-03-29 17:09:12 INFO  ServerThread:192 - Connection Closing..
+2014-04-01 10:24:15 INFO  Main:28 - created server --> server listening.....
+2014-04-01 10:35:22 INFO  Main:28 - created server --> server listening.....
+2014-04-01 10:35:43 INFO  Main:37 - connection Established with --> /127.0.0.1:49959
+2014-04-01 10:35:44 INFO  ServerThread:75 - RFID data recieved [ R,0003460030,G,1746.6076,N,7847.6678,E,T,12:45:40 ] exists with type [ student ]
+2014-04-01 10:35:44 INFO  ServerThread:186 - Connection Closing..
+2014-04-01 10:36:44 INFO  Main:28 - created server --> server listening.....
+2014-04-01 10:36:48 INFO  Main:37 - connection Established with --> /127.0.0.1:49965
+2014-04-01 10:36:49 INFO  ServerThread:75 - RFID data recieved [ R,0003460030,G,1746.6076,N,7847.6678,E,T,12:45:40 ] exists with type [ student ]
+2014-04-01 10:36:49 INFO  ServerThread:103 - RFID-- GPS data GpsDao [Lattitude=17.776793333333334, Longitude=78.79446333333334, arrived_time=E, date=01-04-2014]
+2014-04-01 10:36:49 INFO  ServerThread:186 - Connection Closing..
+2014-04-01 10:38:33 INFO  Main:28 - created server --> server listening.....
+2014-04-01 10:38:37 INFO  Main:37 - connection Established with --> /127.0.0.1:50010
+2014-04-01 10:38:37 INFO  ServerThread:75 - RFID data recieved [ R,0003460030,G,1746.6076,N,7847.6678,E,T,12:45:40 ] exists with type [ student ]
+2014-04-01 10:38:37 INFO  ServerThread:103 - RFID-- GPS data GpsDao [Lattitude=17.776793333333334, Longitude=78.79446333333334, arrived_time=12:45:40, date=01-04-2014]
+2014-04-01 10:38:37 INFO  ServerThread:186 - Connection Closing..
+2014-04-01 10:40:25 INFO  Main:28 - created server --> server listening.....
+2014-04-01 10:40:27 INFO  Main:37 - connection Established with --> /127.0.0.1:50012
+2014-04-01 10:40:27 INFO  ServerThread:103 - RFID data recieved [ R,0003460030,G,1746.6076,N,7847.6678,E,T,12:45:40 ] exists with type [ student ]RFID-- GPS data GpsDao [Lattitude=17.776793333333334, Longitude=78.79446333333334, arrived_time=12:45:40, date=01-04-2014]
+2014-04-01 10:40:27 INFO  ServerThread:186 - Connection Closing..
+2014-04-01 11:35:00 INFO  Main:28 - created server --> server listening.....
+2014-04-01 11:35:17 INFO  Main:37 - connection Established with --> /127.0.0.1:50944
+2014-04-01 11:35:17 INFO  ServerThread:114 - Unableto insert GPS data: due to [ org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.sts.dao.DailyRfidData] is defined ]
+2014-04-01 11:35:17 INFO  ServerThread:194 - Connection Closing..
+2014-04-01 11:36:05 INFO  Main:28 - created server --> server listening.....
+2014-04-01 11:36:07 INFO  Main:37 - connection Established with --> /127.0.0.1:50949
+2014-04-01 11:36:07 INFO  ServerThread:114 - Unableto insert RFID data: due to [ org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'dailyRfidData' must be of type [com.sts.dao.DailyRfidData], but was actually of type [com.sts.serviceimpl.DailyRfidDataImpl] ]
+2014-04-01 11:36:07 INFO  ServerThread:194 - Connection Closing..
+2014-04-01 11:37:56 INFO  Main:28 - created server --> server listening.....
+2014-04-01 11:37:58 INFO  Main:37 - connection Established with --> /127.0.0.1:50951
+2014-04-01 11:37:58 INFO  ServerThread:110 - Daily Rfid Data: com.sts.dao.DailyRfidData@602bd522
+2014-04-01 11:37:58 INFO  ServerThread:111 - RFID data recieved [ R,0003460030,G,1746.6076,N,7847.6678,E,T,12:45:40 ] exists with type [ student ]RFID-- GPS data GpsDao [Lattitude=17.776793333333334, Longitude=78.79446333333334, arrived_time=12:45:40, date=01-04-2014]
+2014-04-01 11:37:58 INFO  ServerThread:194 - Connection Closing..
+2014-04-01 11:38:23 INFO  Main:28 - created server --> server listening.....
+2014-04-01 11:38:25 INFO  Main:37 - connection Established with --> /127.0.0.1:50953
+2014-04-01 11:38:25 INFO  ServerThread:110 - Daily Rfid Data: DailyRfidData [rfid_number=0003460030, Lattitude=17.776793333333334, Longitude=78.79446333333334, arrived_time=12:45:40, date=01-04-2014]
+2014-04-01 11:38:25 INFO  ServerThread:111 - RFID data recieved [ R,0003460030,G,1746.6076,N,7847.6678,E,T,12:45:40 ] exists with type [ student ]RFID-- GPS data GpsDao [Lattitude=17.776793333333334, Longitude=78.79446333333334, arrived_time=12:45:40, date=01-04-2014]
+2014-04-01 11:38:25 INFO  ServerThread:194 - Connection Closing..
+2014-04-01 11:53:14 INFO  Main:28 - created server --> server listening.....
+2014-04-01 11:53:20 INFO  Main:37 - connection Established with --> /127.0.0.1:51011
+2014-04-01 11:53:20 INFO  ServerThread:114 - RFID data recieved [ R,0003460030,G,1746.6076,N,7847.6678,E,T,12:45:40 ] exists with type [ student ]RFID-- GPS data GpsDao [Lattitude=17.776793333333334, Longitude=78.79446333333334, arrived_time=12:45:40, date=01-04-2014]
+2014-04-01 11:53:20 INFO  ServerThread:197 - Connection Closing..
+2014-04-01 11:54:42 INFO  Main:37 - connection Established with --> /127.0.0.1:51015
+2014-04-01 11:54:42 INFO  ServerThread:114 - RFID data recieved [ R,0003460030,G,1746.6076,N,7847.6678,W,T,12:45:40 ] exists with type [ student ]RFID-- GPS data GpsDao [Lattitude=17.776793333333334, Longitude=-78.79446333333334, arrived_time=12:45:40, date=01-04-2014]
+2014-04-01 11:54:42 INFO  ServerThread:197 - Connection Closing..
+2014-04-01 12:05:14 INFO  Main:37 - connection Established with --> /127.0.0.1:51253
+2014-04-01 12:05:14 INFO  ServerThread:160 - inserted GPS data GpsDao [Lattitude=17.776793333333334, Longitude=-78.79446333333334, arrived_time=12:45:40, date=01-04-2014]
+2014-04-01 12:05:14 INFO  ServerThread:197 - Connection Closing..

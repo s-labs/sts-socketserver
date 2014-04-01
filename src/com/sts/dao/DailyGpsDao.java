@@ -2,8 +2,8 @@ package com.sts.dao;
 
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection="gpsdata")
-public class GpsDao {
+@Document(collection="dailygpsdata")
+public class DailyGpsDao {
 
 	private Double Lattitude;
 	private Double Longitude;

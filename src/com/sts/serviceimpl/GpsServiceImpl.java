@@ -2,10 +2,10 @@ package com.sts.serviceimpl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
-import com.sts.dao.GpsDao;
-import com.sts.services.GpsService;
+import com.sts.dao.DailyGpsDao;
+import com.sts.services.DailyGpsService;
 
-public class GpsServiceImpl implements GpsService {
+public class GpsServiceImpl implements DailyGpsService {
 
 	private MongoTemplate mongoTemplate;
 
@@ -15,11 +15,11 @@ public class GpsServiceImpl implements GpsService {
 	}
 
 	@Override
-	public void insertGpsData(GpsDao gpsDao) {
+	public void insertGpsData(DailyGpsDao gpsDao) {
 
 		// System.out.println(mongoTemplate);
-		if (!mongoTemplate.collectionExists(GpsDao.class)) {
-			mongoTemplate.createCollection(GpsDao.class);
+		if (!mongoTemplate.collectionExists(DailyGpsDao.class)) {
+			mongoTemplate.createCollection(DailyGpsDao.class);
 			// System.out.println("created collection....");
 		}
 
@@ -27,7 +27,7 @@ public class GpsServiceImpl implements GpsService {
 	}
 
 	@Override
-	public GpsDao getGpsData() {
+	public DailyGpsDao getGpsData() {
 		// TODO Auto-generated method stub
 		return null;
 	}
