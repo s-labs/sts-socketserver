@@ -1,0 +1,47 @@
+2014-04-01 10:24:15 INFO  Main:28 - created server --> server listening.....
+2014-04-01 10:35:22 INFO  Main:28 - created server --> server listening.....
+2014-04-01 10:35:43 INFO  Main:37 - connection Established with --> /127.0.0.1:49959
+2014-04-01 10:35:44 INFO  ServerThread:75 - RFID data recieved [ R,0003460030,G,1746.6076,N,7847.6678,E,T,12:45:40 ] exists with type [ student ]
+2014-04-01 10:35:44 INFO  ServerThread:186 - Connection Closing..
+2014-04-01 10:36:44 INFO  Main:28 - created server --> server listening.....
+2014-04-01 10:36:48 INFO  Main:37 - connection Established with --> /127.0.0.1:49965
+2014-04-01 10:36:49 INFO  ServerThread:75 - RFID data recieved [ R,0003460030,G,1746.6076,N,7847.6678,E,T,12:45:40 ] exists with type [ student ]
+2014-04-01 10:36:49 INFO  ServerThread:103 - RFID-- GPS data GpsDao [Lattitude=17.776793333333334, Longitude=78.79446333333334, arrived_time=E, date=01-04-2014]
+2014-04-01 10:36:49 INFO  ServerThread:186 - Connection Closing..
+2014-04-01 10:38:33 INFO  Main:28 - created server --> server listening.....
+2014-04-01 10:38:37 INFO  Main:37 - connection Established with --> /127.0.0.1:50010
+2014-04-01 10:38:37 INFO  ServerThread:75 - RFID data recieved [ R,0003460030,G,1746.6076,N,7847.6678,E,T,12:45:40 ] exists with type [ student ]
+2014-04-01 10:38:37 INFO  ServerThread:103 - RFID-- GPS data GpsDao [Lattitude=17.776793333333334, Longitude=78.79446333333334, arrived_time=12:45:40, date=01-04-2014]
+2014-04-01 10:38:37 INFO  ServerThread:186 - Connection Closing..
+2014-04-01 10:40:25 INFO  Main:28 - created server --> server listening.....
+2014-04-01 10:40:27 INFO  Main:37 - connection Established with --> /127.0.0.1:50012
+2014-04-01 10:40:27 INFO  ServerThread:103 - RFID data recieved [ R,0003460030,G,1746.6076,N,7847.6678,E,T,12:45:40 ] exists with type [ student ]RFID-- GPS data GpsDao [Lattitude=17.776793333333334, Longitude=78.79446333333334, arrived_time=12:45:40, date=01-04-2014]
+2014-04-01 10:40:27 INFO  ServerThread:186 - Connection Closing..
+2014-04-01 11:35:00 INFO  Main:28 - created server --> server listening.....
+2014-04-01 11:35:17 INFO  Main:37 - connection Established with --> /127.0.0.1:50944
+2014-04-01 11:35:17 INFO  ServerThread:114 - Unableto insert GPS data: due to [ org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.sts.dao.DailyRfidData] is defined ]
+2014-04-01 11:35:17 INFO  ServerThread:194 - Connection Closing..
+2014-04-01 11:36:05 INFO  Main:28 - created server --> server listening.....
+2014-04-01 11:36:07 INFO  Main:37 - connection Established with --> /127.0.0.1:50949
+2014-04-01 11:36:07 INFO  ServerThread:114 - Unableto insert RFID data: due to [ org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'dailyRfidData' must be of type [com.sts.dao.DailyRfidData], but was actually of type [com.sts.serviceimpl.DailyRfidDataImpl] ]
+2014-04-01 11:36:07 INFO  ServerThread:194 - Connection Closing..
+2014-04-01 11:37:56 INFO  Main:28 - created server --> server listening.....
+2014-04-01 11:37:58 INFO  Main:37 - connection Established with --> /127.0.0.1:50951
+2014-04-01 11:37:58 INFO  ServerThread:110 - Daily Rfid Data: com.sts.dao.DailyRfidData@602bd522
+2014-04-01 11:37:58 INFO  ServerThread:111 - RFID data recieved [ R,0003460030,G,1746.6076,N,7847.6678,E,T,12:45:40 ] exists with type [ student ]RFID-- GPS data GpsDao [Lattitude=17.776793333333334, Longitude=78.79446333333334, arrived_time=12:45:40, date=01-04-2014]
+2014-04-01 11:37:58 INFO  ServerThread:194 - Connection Closing..
+2014-04-01 11:38:23 INFO  Main:28 - created server --> server listening.....
+2014-04-01 11:38:25 INFO  Main:37 - connection Established with --> /127.0.0.1:50953
+2014-04-01 11:38:25 INFO  ServerThread:110 - Daily Rfid Data: DailyRfidData [rfid_number=0003460030, Lattitude=17.776793333333334, Longitude=78.79446333333334, arrived_time=12:45:40, date=01-04-2014]
+2014-04-01 11:38:25 INFO  ServerThread:111 - RFID data recieved [ R,0003460030,G,1746.6076,N,7847.6678,E,T,12:45:40 ] exists with type [ student ]RFID-- GPS data GpsDao [Lattitude=17.776793333333334, Longitude=78.79446333333334, arrived_time=12:45:40, date=01-04-2014]
+2014-04-01 11:38:25 INFO  ServerThread:194 - Connection Closing..
+2014-04-01 11:53:14 INFO  Main:28 - created server --> server listening.....
+2014-04-01 11:53:20 INFO  Main:37 - connection Established with --> /127.0.0.1:51011
+2014-04-01 11:53:20 INFO  ServerThread:114 - RFID data recieved [ R,0003460030,G,1746.6076,N,7847.6678,E,T,12:45:40 ] exists with type [ student ]RFID-- GPS data GpsDao [Lattitude=17.776793333333334, Longitude=78.79446333333334, arrived_time=12:45:40, date=01-04-2014]
+2014-04-01 11:53:20 INFO  ServerThread:197 - Connection Closing..
+2014-04-01 11:54:42 INFO  Main:37 - connection Established with --> /127.0.0.1:51015
+2014-04-01 11:54:42 INFO  ServerThread:114 - RFID data recieved [ R,0003460030,G,1746.6076,N,7847.6678,W,T,12:45:40 ] exists with type [ student ]RFID-- GPS data GpsDao [Lattitude=17.776793333333334, Longitude=-78.79446333333334, arrived_time=12:45:40, date=01-04-2014]
+2014-04-01 11:54:42 INFO  ServerThread:197 - Connection Closing..
+2014-04-01 12:05:14 INFO  Main:37 - connection Established with --> /127.0.0.1:51253
+2014-04-01 12:05:14 INFO  ServerThread:160 - inserted GPS data GpsDao [Lattitude=17.776793333333334, Longitude=-78.79446333333334, arrived_time=12:45:40, date=01-04-2014]
+2014-04-01 12:05:14 INFO  ServerThread:197 - Connection Closing..

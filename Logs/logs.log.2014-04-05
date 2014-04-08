@@ -1,0 +1,37 @@
+2014-04-05 09:27:29 INFO  Main:24 - created server --> server listening.....
+2014-04-05 09:27:53 INFO  Main:33 - connection Established with --> /127.0.0.1:49606
+2014-04-05 09:27:53 INFO  ProcessGpsData:28 - Gps data recieved [ ReceivedGpsData [firstSign=N, secondSign=E, lattitude=1746.6076, longitude=7847.6678, time=12:45:40, date=05-04-2014, bus_id=BUS_101] ] 
+2014-04-05 09:27:53 INFO  ServerThread:139 - Connection Closing..
+2014-04-05 09:31:43 INFO  Main:24 - created server --> server listening.....
+2014-04-05 09:31:45 INFO  Main:33 - connection Established with --> /127.0.0.1:49646
+2014-04-05 09:31:45 INFO  ProcessGpsData:41 - Gps data recieved [ ReceivedGpsData [firstSign=N, secondSign=E, lattitude=1746.6076, longitude=7847.6678, time=12:45:40, date=05-04-2014, bus_id=BUS_101] ] is invalid... ==> ignoring
+2014-04-05 09:31:45 INFO  ServerThread:139 - Connection Closing..
+2014-04-05 09:35:55 INFO  Main:24 - created server --> server listening.....
+2014-04-05 09:36:01 INFO  Main:33 - connection Established with --> /127.0.0.1:49245
+2014-04-05 09:36:01 INFO  ProcessGpsData:41 - Gps data recieved [ ReceivedGpsData [firstSign=N, secondSign=E, lattitude=1746.6076, longitude=7847.6678, time=12:45:40, date=05-04-2014, bus_id=BUS_101] ] is invalid... ==> ignoring
+2014-04-05 09:36:01 INFO  ServerThread:139 - Connection Closing..
+2014-04-05 09:37:15 INFO  Main:24 - created server --> server listening.....
+2014-04-05 09:37:18 INFO  Main:33 - connection Established with --> /127.0.0.1:49246
+2014-04-05 09:37:18 INFO  ProcessGpsData:34 - Gps data recieved [ ReceivedGpsData [firstSign=N, secondSign=E, lattitude=1746.6076, longitude=7847.6678, time=12:45:40, date=05-04-2014, bus_id=BUS_101] ] is valid
+2014-04-05 09:37:18 INFO  ServerThread:139 - Connection Closing..
+2014-04-05 09:46:35 INFO  Main:24 - created server --> server listening.....
+2014-04-05 09:46:40 INFO  Main:33 - connection Established with --> /127.0.0.1:49255
+2014-04-05 09:46:40 INFO  ProcessGpsData:38 - Gps data after processed is: [ 17.776793333333334 , 78.79446333333334 ]
+2014-04-05 09:46:40 INFO  ServerThread:139 - Connection Closing..
+2014-04-05 09:51:14 INFO  Main:24 - created server --> server listening.....
+2014-04-05 09:51:18 INFO  Main:33 - connection Established with --> /127.0.0.1:49275
+2014-04-05 09:51:18 INFO  ProcessGpsData:40 - Gps data after processed is: [ +17.776793333333334 , +78.79446333333334 ]
+2014-04-05 09:51:18 INFO  ServerThread:139 - Connection Closing..
+2014-04-05 09:51:41 INFO  Main:33 - connection Established with --> /127.0.0.1:49276
+2014-04-05 09:51:41 INFO  ProcessGpsData:40 - Gps data after processed is: [ +17.776793333333334 , +78.79446333333334 ]
+2014-04-05 09:51:41 INFO  ServerThread:139 - Connection Closing..
+2014-04-05 09:52:24 INFO  Main:24 - created server --> server listening.....
+2014-04-05 09:52:25 INFO  Main:33 - connection Established with --> /127.0.0.1:49299
+2014-04-05 09:52:25 INFO  ProcessGpsData:40 - Gps data after processed is: [ +17.776793333333334 , -78.79446333333334 ]
+2014-04-05 09:52:25 INFO  ServerThread:139 - Connection Closing..
+2014-04-05 09:52:37 INFO  Main:33 - connection Established with --> /127.0.0.1:49300
+2014-04-05 09:52:37 INFO  ProcessGpsData:40 - Gps data after processed is: [ +17.776793333333334 , -78.79446333333334 ]
+2014-04-05 09:52:37 INFO  ServerThread:139 - Connection Closing..
+2014-04-05 09:52:43 INFO  Main:33 - connection Established with --> /127.0.0.1:49301
+2014-04-05 09:52:43 INFO  ProcessGpsData:40 - Gps data after processed is: [ +17.776793333333334 , +78.79446333333334 ]
+2014-04-05 09:52:43 INFO  ServerThread:139 - Connection Closing..

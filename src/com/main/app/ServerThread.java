@@ -11,13 +11,10 @@ import java.util.Date;
 import org.apache.log4j.Logger;
 import org.springframework.context.ApplicationContext;
 
-import com.data.grps.GprsData;
-import com.sts.dao.DailyGpsDao;
-import com.sts.dao.DailyRfidData;
-import com.sts.dao.RfidDao;
-import com.sts.serviceimpl.DailyRfidDataImpl;
-import com.sts.serviceimpl.GpsServiceImpl;
-import com.sts.serviceimpl.RfidServiceImpl;
+import com.sts.process.gps.ProcessGpsData;
+import com.sts.process.gps.ReceivedGpsData;
+import com.sts.process.rfid.ProcessRfidData;
+import com.sts.process.rfid.ReceivedRfidData;
 //Server Thread Program
 class ServerThread extends Thread {
 	private static final Logger logger = Logger.getLogger(ServerThread.class);
@@ -48,127 +45,72 @@ class ServerThread extends Thread {
 
 			os.println(line);
 			os.flush();
-			
-			//logger.info("Revieved data is [ " + line + " ]");
-			DataSender dataSender = context.getBean("dataSender",DataSender.class);
-			dataSender.setData(line);
-			ProcessData processData = context.getBean("processData",ProcessData.class);
-			boolean validData=processData.isDatavalid(dataSender.getData());
-			if(validData==false){
-				logger.info("invalid data recieved [ "+dataSender.getData()+" ]");
+			Date date = new Date();
+			String current_date= new SimpleDateFormat("dd-MM-yyyy").format(date);
+			//logger.info("Received data is: "+line);
+			ProcessData processData=context.getBean(ProcessData.class);
+			boolean is_data_valid=processData.isDatavalid(line);
+			if(is_data_valid==true){
+				String data_type=processData.findDataType(line);
+				if(data_type.equals("RFID")){
+					
+					/*
+					 * RFID Data logic
+					 */
+					ProcessRfidData processRfidData=context.getBean(ProcessRfidData.class);
+					try{
+						String arr[] = line.split(",");
+						ReceivedRfidData receivedRfidData=context.getBean(ReceivedRfidData.class);
+						receivedRfidData.setRfid_number(arr[1]);
+						char c = arr[4].charAt(0);
+						char c1 = arr[6].charAt(0);
+						receivedRfidData.setFirstSign(c);
+						receivedRfidData.setSecondSign(c1);
+						receivedRfidData.setLattitude(Double.parseDouble(arr[3]));
+						receivedRfidData.setLongitude(Double.parseDouble(arr[5]));
+						receivedRfidData.setTime(arr[8]);
+						receivedRfidData.setBus_id(arr[10]);
+						
+						receivedRfidData.setDate(current_date);
+						processRfidData.setRfid(receivedRfidData);
+						processRfidData.setContext(context);
+						processRfidData.processRfidDataReceived();
+						
+					}
+					catch(Exception e){
+						e.printStackTrace();
+						logger.info("invalid data recieved [ "+line+" ] ==> ignoring");
+					}
+				}
+				else if(data_type.equals("GPS")){
+					
+					
+					/*
+					 * Gps Data logic
+					 */
+					String arr[] = line.split(",");
+					ReceivedGpsData receivedGpsData=context.getBean(ReceivedGpsData.class);
+					receivedGpsData.setBus_id(arr[8]);
+					receivedGpsData.setDate(current_date);
+					char c = arr[2].charAt(0);
+					char c1 = arr[4].charAt(0);
+					receivedGpsData.setFirstSign(c);
+					receivedGpsData.setSecondSign(c1);
+					receivedGpsData.setLattitude(Double.parseDouble(arr[1]));
+					receivedGpsData.setLongitude(Double.parseDouble(arr[3]));
+					receivedGpsData.setTime(arr[6]);
+					ProcessGpsData processGpsData=context.getBean(ProcessGpsData.class);
+					processGpsData.setContext(context);
+					processGpsData.setGps(receivedGpsData);
+					processGpsData.processGpsDataReceived();
+				}
+				else{
+					logger.info("invalid data recieved [ "+line+" ] ==> ignoring.....");
+				}
 			}
 			else{
-				//logger.info("[ "+dataSender.getData()+" ]");
-				String dataType=processData.findDataType(dataSender.getData());
-				if(dataType==null){
-					logger.info("invalid data recieved [ "+dataSender.getData()+" ] ==> ignoring.....");
-				}
-				else if(dataType.equals("RFID")){
-					RfidServiceImpl rfidServiceImpl=context.getBean("rfidServiceImpl",RfidServiceImpl.class);
-					String data=dataSender.getData().trim();
-					String arr[] = data.split(",");
-					RfidDao rfidDao=rfidServiceImpl.getRfidByNumber(arr[1]);
-					if(rfidDao==null){
-						//System.out.println(rfidDao);
-						logger.info("RFID data recieved [ "+dataSender.getData()+" ] doesnot exists in db or doesnot assigned to no one");
-					}
-					else{
-						
-							//logger.info("RFID data recieved [ "+dataSender.getData()+" ] exists with type [ "+rfidDao.getType()+" ]");
-							GprsData gprsData=context.getBean("gprsData",GprsData.class);
-							Double lat=gprsData.processLat(arr[3]);
-							if(lat==null){
-								logger.info("GPS data recieved [ "+dataSender.getData()+" ] is not valid");
-							}
-							else{
-								Double Long=gprsData.processLat(arr[5]);
-								if(Long==null){
-									logger.info("GPS data recieved [ "+dataSender.getData()+" ] is not valid");
-								}
-								else{
-									
-									String signs[]=gprsData.assignSigns(arr[4],arr[6]).split(",");
-									Double Lattitude=Double.parseDouble(signs[0]+lat.toString());
-									Double Longitude=Double.parseDouble(signs[1]+Long.toString());
-									String time=arr[8];
-									//logger.info("After Process : Lat = "+Lattitude+" Long= "+Longitude);
-								
-									DailyGpsDao gpsDao=context.getBean("gpsDao",DailyGpsDao.class);
-									Date date = new Date();
-									String current_date= new SimpleDateFormat("dd-MM-yyyy").format(date);
-									gpsDao.setArrived_time(time);
-									gpsDao.setLattitude(Lattitude);
-									gpsDao.setLongitude(Longitude);
-									gpsDao.setDate(current_date);
-									try{
-										//gpsServiceImpl.insertGpsData(gpsDao);
-										DailyRfidData dailyRfidData=context.getBean(DailyRfidData.class);
-										dailyRfidData.setArrived_time(time);
-										dailyRfidData.setDate(current_date);
-										dailyRfidData.setLattitude(Lattitude);
-										dailyRfidData.setLongitude(Longitude);
-										dailyRfidData.setRfid_number(rfidDao.getRfid_number());
-										//logger.info("Daily Rfid Data: "+dailyRfidData);
-										DailyRfidDataImpl dailyRfidDataImpl=context.getBean(DailyRfidDataImpl.class);
-										dailyRfidDataImpl.insertDailyRfidData(dailyRfidData);
-										logger.info("RFID data recieved [ "+dataSender.getData()+" ] exists with type [ "+rfidDao.getType()+" ]"+"RFID-- GPS data "+gpsDao);
-									}
-									catch(Exception e){
-										logger.info("Unableto insert RFID data: due to [ "+e+" ]");
-									}
-									
-								}
-							}
-					}
-				}
-				else if(dataType.equals("GPRS")){
-					GprsData gprsData=context.getBean("gprsData",GprsData.class);
-					boolean isGprsDataValid=gprsData.isGprsDataValid(dataSender.getData());
-					if(isGprsDataValid==false){ //not Valid GPRS data received
-						logger.info("GPRS data recieved [ "+dataSender.getData()+" ] is not valid");
-					}
-					else{ //Valid GPRS data received
-						//logger.info("GPRS data received [ "+dataSender.getData()+" ]");
-						String data=dataSender.getData().trim();
-						String arr[] = data.split(",");
-						Double lat=gprsData.processLat(arr[1]);
-						if(lat==null){
-							logger.info("GPRS data recieved [ "+dataSender.getData()+" ] is not valid");
-						}
-						else{
-							Double Long=gprsData.processLat(arr[3]);
-							if(Long==null){
-								logger.info("GPRS data recieved [ "+dataSender.getData()+" ] is not valid");
-							}
-							else{
-								
-								String signs[]=gprsData.assignSigns(arr[2],arr[4]).split(",");
-								Double Lattitude=Double.parseDouble(signs[0]+lat.toString());
-								Double Longitude=Double.parseDouble(signs[1]+Long.toString());
-								String time=arr[6];
-								//logger.info("After Process : Lat = "+Lattitude+" Long= "+Longitude);
-								GpsServiceImpl gpsServiceImpl=context.getBean("gpsServiceImpl",GpsServiceImpl.class);
-								DailyGpsDao gpsDao=context.getBean("gpsDao",DailyGpsDao.class);
-								Date date = new Date();
-								String current_date= new SimpleDateFormat("dd-MM-yyyy").format(date);
-								gpsDao.setArrived_time(time);
-								gpsDao.setLattitude(Lattitude);
-								gpsDao.setLongitude(Longitude);
-								gpsDao.setDate(current_date);
-								try{
-									gpsServiceImpl.insertGpsData(gpsDao);
-									logger.info("inserted GPS data "+gpsDao);
-								}
-								catch(Exception e){
-									logger.info("Unableto insert GPS data: due to [ "+e+" ]");
-								}
-								
-							}
-						}
-					}
-				}
+				logger.info("invalid data recieved [ "+line+" ] ==> ignoring.....");
 			}
-
 		} catch (IOException e) {
 
 			line = this.getName();

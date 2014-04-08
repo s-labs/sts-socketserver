@@ -1,0 +1,4 @@
+2014-04-02 13:05:10 INFO  Main:28 - created server --> server listening.....
+2014-04-02 13:06:27 INFO  Main:37 - connection Established with --> /127.0.0.1:51316
+2014-04-02 13:06:27 INFO  ServerThread:160 - inserted GPS data GpsDao [Lattitude=17.776793333333334, Longitude=-78.79446333333334, arrived_time=12:45:40, date=02-04-2014]
+2014-04-02 13:06:27 INFO  ServerThread:197 - Connection Closing..
